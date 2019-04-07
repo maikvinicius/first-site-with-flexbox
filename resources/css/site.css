@@ -1,0 +1,146 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  background: gray;
+  color: white;
+  text-align: center;
+  padding: 60px 0px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #353535;
+}
+
+nav a {
+  padding: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover{
+  background-color: rgb(83, 83, 83);
+}
+
+row {
+  display: flex;
+  flex-direction: row;
+}
+
+side{
+  flex:30%;
+  padding: 20px;
+  background-color: rgb(212, 211, 211);
+}
+
+.textAlignCenter{
+  text-align: justify;
+}
+
+.marginBottom10px{
+  margin-bottom: 10px;
+}
+
+.marginTop10px{
+  margin-top: 10px;
+}
+
+.fakeFoto{
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  background: gray;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+
+main{
+  flex: 70%;
+  padding: 20px;
+}
+
+.noticias{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  width:100%;
+  max-width: 900px;
+  justify-content: center;
+    align-items: center;
+}
+
+.noticia{
+  margin-top: 40px;
+  width: 100%;
+  max-width: 200px;
+  padding: 10px;
+  text-align: center;
+}
+
+.noticia h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.noticia .data{
+  flex: 1;
+  font-size: 12px;
+  margin-top: 10px;
+  text-align: right;
+}
+
+.noticia p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: justify;
+}
+
+.noticia button{
+  padding: 10px;
+  border-radius: 20px;
+  background-color: grey;
+  color: white;
+}
+
+footer {
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+footer p{
+  font-size: 10px;
+  color: white;
+  padding: 10px 0px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 780px){
+  nav{
+    flex-direction: column;
+  }
+  nav a{
+    text-align: center;
+  }
+  row{
+    flex-direction: column;
+  }
+  .noticias{
+    flex-direction: column;
+  }
+  .noticia{
+    max-width: none;
+  }
+}
